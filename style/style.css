@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 1em;
+}
+
+nav div.logo-container img {
+  max-width: 30%;
+  display: block;
+}
+
+nav div.button-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background: #E50914;
+  list-style: none;
+  text-decoration: none;
+  min-width: 60px;
+  padding: .2em;
+  border-radius: .2em;
+}
+
+hr {
+  padding: .2em;
+  background: #363636;
+  border: none;
+  max-width: 100%;
+}
+
+div.background-top {
+  background: url(/Front-End/Netflix/img/netflixBg.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+div.background-top div.hero-content {
+  padding: 2em 2em;
+}
+
+div.background-top div.hero-content h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+div.background-top div.hero-content p {
+  text-align: center;
+  margin-top: .9em;
+  margin-bottom: .9em;
+}
+
+div.background-top div.hero-content input.inputEmail {
+  width: 100%;
+  padding: 1em;
+}
+
+div.background-top div.hero-content div.btnstarted-container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.background-top div.hero-content div.btnstarted-container a {
+  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E50914;
+  list-style: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: .5em;
+}
+
+div.first-container section div.first-headline h1 {
+  font-size: 28px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+div.first-container section div.first-description {
+  padding: 0 1em;
+}
+
+div.first-container section div.first-description p {
+  font-size: 18px;
+  text-align: center;
+}
+
+div.first-container section div.first-img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.first-container section div.first-img img {
+  max-width: 80%;
+}
+
+div.second-container section div.second-headline {
+  padding: 0 1em;
+}
+
+div.second-container section div.second-headline h1 {
+  font-size: 28px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+div.second-container section div.second-description p {
+  font-size: 18px;
+  text-align: center;
+}
+
+div.second-container section div.phone-container div.mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.second-container section div.phone-container div.mobile-container img {
+  min-width: 100%;
+}
+
+div.second-container section div.phone-container div.downloading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid gray;
+  border-radius: .7em;
+  padding: .7em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+div.second-container section div.phone-container div.downloading-container img {
+  max-width: 12%;
+}
+
+div.second-container section div.phone-container div.downloading-container p {
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.second-container section div.phone-container div.downloading-container p i.fa-solid {
+  font-size: 28px;
+  margin: 0 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.third-container div.third-content {
+  margin-bottom: 4em;
+}
+
+div.third-container div.third-content h1 {
+  font-size: 28px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+div.third-container div.third-content p {
+  font-size: 18px;
+  text-align: center;
+}
+
+div.fourth-container {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+div.fourth-container div.fourth-content {
+  padding: 0 1em;
+}
+
+div.fourth-container div.fourth-content h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: .4em;
+}
+
+div.fourth-container div.fourth-content p {
+  font-size: 18px;
+  text-align: center;
+}
+
+div.fourth-container div.fourth-img img {
+  max-width: 100%;
+}
+
+div.fifth-container {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+div.fifth-container div.fifth-head h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
