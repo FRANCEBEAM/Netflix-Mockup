@@ -26,7 +26,7 @@ nav {
 }
 
 nav div.logo-container img {
-  max-width: 30%;
+  max-width: 100px;
   display: block;
 }
 
@@ -44,8 +44,8 @@ nav div.button-container a {
   background: #E50914;
   list-style: none;
   text-decoration: none;
-  min-width: 60px;
-  padding: .2em;
+  width: 70px;
+  padding: .7em;
   border-radius: .2em;
 }
 
@@ -57,9 +57,11 @@ hr {
 }
 
 div.background-top {
-  background: url(/Front-End/Netflix/img/netflixBg.jpg);
+  background: url(/img/netflixBg.jpg);
   background-size: cover;
   width: 100%;
+  -webkit-box-shadow: inset 0px 0px 60px 60px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0px 0px 60px 60px rgba(0, 0, 0, 0.9);
 }
 
 div.background-top div.hero-content {
@@ -78,6 +80,15 @@ div.background-top div.hero-content p {
 }
 
 div.background-top div.hero-content input.inputEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 1em;
 }
@@ -96,21 +107,22 @@ div.background-top div.hero-content div.btnstarted-container {
 }
 
 div.background-top div.hero-content div.btnstarted-container a {
-  min-width: 40%;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
   background: #E50914;
   list-style: none;
   text-decoration: none;
   color: #FFFFFF;
-  padding: .5em;
+  padding: 1em;
 }
 
 div.first-container section div.first-headline h1 {
@@ -195,7 +207,6 @@ div.second-container section div.phone-container div.downloading-container img {
 }
 
 div.second-container section div.phone-container div.downloading-container p {
-  margin-left: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,10 +274,141 @@ div.fourth-container div.fourth-img img {
 
 div.fifth-container {
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 div.fifth-container div.fifth-head h1 {
   text-align: center;
+  margin-bottom: 2em;
+}
+
+div.fifth-container div.questions-container {
+  display: flexbox;
+}
+
+div.fifth-container div.questions-container h1 {
+  font-weight: 600;
+  padding: 0 1em;
+  font-size: 18px;
+}
+
+div.fifth-container div.questions-container div.question {
+  cursor: pointer;
+  padding: .7em;
+  margin: 1em 0;
+  background: #303030;
+}
+
+div.fifth-container div.questions-container i.fa-solid {
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: inline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.fifth-container div.getstart-container {
+  padding: 1em 1em;
+}
+
+div.fifth-container div.getstart-container h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+div.fifth-container div.getstart-container form {
+  margin-top: 1em;
+}
+
+div.fifth-container div.getstart-container form input.inputEmail {
+  width: 100%;
+  padding: 1em;
+}
+
+div.fifth-container div.getstart-container div.btnstarted-container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.fifth-container div.getstart-container div.btnstarted-container a {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E50914;
+  list-style: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1em;
+}
+
+div.footer-container {
+  padding: 1em 1em;
+  margin-bottom: 2em;
+}
+
+div.footer-container footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #626262;
+}
+
+div.footer-container footer div.foot-header {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+div.footer-container footer div.foot-header a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #626262;
+}
+
+div.footer-container footer div.foot-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'col1 col2';
+  margin-bottom: 2em;
+}
+
+div.footer-container footer div.foot-content .column1 {
+  line-height: 2em;
+}
+
+div.footer-container footer div.foot-content .column1 a {
+  grid-area: 'col1';
+  font-size: 15px;
+  text-decoration: none;
+  color: #626262;
+}
+
+div.footer-container footer div.foot-content .column2 {
+  line-height: 2em;
+}
+
+div.footer-container footer div.foot-content .column2 a {
+  grid-area: 'col2';
+  font-size: 15px;
+  text-decoration: none;
+  color: #626262;
 }
 /*# sourceMappingURL=style.css.map */

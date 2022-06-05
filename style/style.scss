@@ -24,14 +24,14 @@ body{
     font-family: $font;
 }
 
-//Navigation
+// //Navigation
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em 1em;
     div.logo-container img{
-        max-width: 30%;
+       max-width: 100px;
         display: block;
     }
     div.button-container a{
@@ -42,11 +42,12 @@ nav{
         background: color(color-red);
         list-style: none;
         text-decoration: none;
-        min-width: 60px;
-        padding: .2em;
+        width: 70px;
+        padding: .7em;
         border-radius: .2em;
     }
 }
+
 hr{
     padding: .2em;
     background: rgb(54, 54, 54);
@@ -54,11 +55,12 @@ hr{
     max-width: 100%;
 }
 
-// Hero Content
+// // Hero Content
 div.background-top{
-    background: url(/Front-End/Netflix/img/netflixBg.jpg);
+    background: url(/img/netflixBg.jpg);
     background-size: cover;
     width: 100%;
+    box-shadow: inset 0px 0px 60px 60px rgba(0,0,0,0.9);
     div.hero-content{
         padding: 2em 2em;
         h1{
@@ -72,6 +74,9 @@ div.background-top{
         }
 
         input.inputEmail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             padding: 1em;
         }
@@ -82,21 +87,22 @@ div.background-top{
            justify-content: center;
            align-items: center;
             a{
-                min-width: 40%;
+                max-width: 50%;
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
                 align-items: center;
                 background: color(color-red);
                 list-style: none;
                 text-decoration: none;
                 color: color(color-white);
-                padding: .5em;
+                padding: 1em;
             }
         }
     }
 }
 
-//First Section
+// //First Section
 div.first-container{
     section{
         div.first-headline{
@@ -171,7 +177,6 @@ div.second-container{
                     max-width: 12%;
                 }
                 p{
-                    margin-left: 2em;
                    display: flex;
                    align-items: center;
                    justify-content: space-between;
@@ -231,13 +236,134 @@ div.fourth-container{
 //Fifth Section
 div.fifth-container{
     margin-top: 4em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
+    
     div.fifth-head{
         h1{
            text-align: center;
+           margin-bottom: 2em;
         }
     }
+
+    div.questions-container{
+      display: flexbox;
+        h1{
+            font-weight: 600;
+            padding: 0 1em;
+            font-size: 18px;
+        }
+
+        div.question{
+            cursor: pointer;
+            padding: .7em;
+            margin: 1em 0;
+            background: #303030;
+        }
+
+        i.fa-solid{
+            position: relative;
+            justify-content: space-between;
+            display: inline;
+            align-items: flex-end;
+           
+        }
+    }
+
+    div.getstart-container{
+        padding: 1em 1em;
+        h1{
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        form{
+            margin-top: 1em;
+            input.inputEmail{
+                width: 100%;
+                padding: 1em;
+            }
+        }
+
+        div.btnstarted-container{
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             a{
+                 max-width: 50%;
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background: color(color-red);
+                 list-style: none;
+                 text-decoration: none;
+                 color: color(color-white);
+                 padding: 1em;
+             }
+         }
+    }
 }
+
+    // Footer Section
+    div.footer-container{
+        padding: 1em 1em;
+        margin-bottom: 2em;
+        footer{
+            a{
+                font-size: 15px;
+                text-decoration: none;
+                color: #626262;
+            }
+            div.foot-header{
+                margin-top: 2em;
+                margin-bottom: 2em;
+               a{
+                font-size: 15px;
+                text-decoration: none;
+                color: #626262;
+               }
+               
+              
+            }
+
+            div.foot-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                'col1 col2';
+                margin-bottom: 2em;
+               
+                .column1{ 
+                 line-height: 2em;
+                    a{
+                        grid-area: 'col1';
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: #626262;
+                    }
+                }
+
+                .column2{
+                    line-height: 2em;
+                    a{
+                        grid-area: 'col2';
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: #626262;
+                       
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    //549 media query
+    
+
+    //768 media query
+
+    //949 media query to Desktop
 
 
 
